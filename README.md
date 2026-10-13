@@ -1,6 +1,6 @@
-# ECG-PTBLX-IC
+# ECG-PTB-LX
 
-Este repositório contém os scripts, notebooks de análise e documentação do projeto de Iniciação Científica focado na análise e classificação de sinais de Eletrocardiograma (ECG) utilizando o dataset **PTB-XL** (12 derivações, 100 Hz).
+Este repositório contém os scripts, notebooks de análise e documentação do Projeto de Pesquisa focado na análise e classificação de sinais de Eletrocardiograma (ECG) utilizando o dataset **PTB-XL** (12 derivações, 100 Hz).
 
 O objetivo principal é o desenvolvimento de uma pipeline de pré-processamento e modelagem para a classificação binária de exames entre **NORM** (Normal) e **MI** (Myocardial Infarction / Enfarto do Miocárdio).
 
