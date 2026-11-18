@@ -1,6 +1,6 @@
 # ECG-PTB-XL
 
-Este repositório contém os cadernos de análise e a documentação do Projeto de Pesquisa focado na classificação de sinais de eletrocardiograma (ECG) com o conjunto de dados público PTB-XL (12 derivações, versão de 100 Hz).
+Este repositório contém os notebooks de análise e a documentação do Projeto de Pesquisa focado na classificação de sinais de eletrocardiograma (ECG) com o conjunto de dados público PTB-XL (12 derivações, versão de 100 Hz).
 
 O objetivo principal é desenvolver um pipeline reprodutível de pré-processamento e modelagem para a classificação binária de exames entre NORM (normal) e MI (infarto do miocárdio), com separação dos dados por paciente para evitar vazamento de dados (*data leakage*).
 
@@ -8,13 +8,13 @@ O objetivo principal é desenvolver um pipeline reprodutível de pré-processame
 
 ## Estrutura do repositório
 
-- `01_eda_ptbxl.ipynb`: notebook da análise exploratória (EDA). Inclui a rotulagem NORM vs MI pela tabela oficial `scp_statements.csv`, o tratamento da idade anonimizada, a análise por paciente, a divisão treino/validação/teste por `patient_id` (sem vazamento), o carregamento e a normalização de um ECG de exemplo e testes mínimos.
-- `Dicionário_e_Fluxo_de_Dados_PTBXL.pdf`: dicionário das variáveis e fluxo de dados do pipeline.
-- `Artigos_ficha.pdf`: fichas de leitura dos artigos que embasam a metodologia.
+- `setembro/01_eda_ptbxl.ipynb`: notebook da análise exploratória (EDA). Inclui a rotulagem NORM vs MI pela tabela oficial `scp_statements.csv`, o tratamento da idade anonimizada, a análise por paciente, a divisão treino/validação/teste por `patient_id` (sem vazamento), o carregamento e a normalização de um ECG de exemplo e testes mínimos.
+- `setembro/Dicionário_e_Fluxo_de_Dados_PTBXL.pdf`: dicionário das variáveis e fluxo de dados do pipeline.
+- `setembro/Artigos_ficha.pdf`: fichas de leitura dos artigos que embasam a metodologia.
 
 ## Como executar
 
-1. Abra `01_eda_ptbxl.ipynb` no Google Colab.
+1. Abra `setembro/01_eda_ptbxl.ipynb` no Google Colab.
 2. Execute todas as células em ordem (Ambiente de execução → Executar tudo). É necessário ter internet: os metadados e o ECG de exemplo são baixados diretamente do PhysioNet, e os dados não ficam armazenados neste repositório.
 3. Para executar fora do Colab, instale as dependências com `pip install wfdb pandas numpy matplotlib seaborn scikit-learn` e remova a primeira célula (montagem do Google Drive).
 
